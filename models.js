@@ -9,6 +9,7 @@ const uuid = require('uuid');
 // Our concern in this example is with how the API layer
 // is implemented, and getting it to use an existing model.
 
+const timeStamp = Date.now()
 
 function StorageException(message) {
    this.message = message;

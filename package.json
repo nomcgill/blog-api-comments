@@ -3,14 +3,31 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "morgan": "^1.9.1",
     "uuid": "^3.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomcgill/blog-api-drill-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nomcgill/blog-api-drill-test/issues"
+  },
+  "homepage": "https://github.com/nomcgill/blog-api-drill-test#readme",
   "description": ""
 }
