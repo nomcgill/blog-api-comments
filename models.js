@@ -61,7 +61,7 @@ function createBlogPostsModel() {
 }
 
 
-const blogPostSchema = mongoose.Schema({
+const blogSchema = mongoose.Schema({
   author: {
     firstName: String,
     lastName: String
@@ -71,7 +71,7 @@ const blogPostSchema = mongoose.Schema({
   created: {type: Date, default: Date.now}
 });
 
-blogPostSchema.virtual('authorName').get(function() {
+blogSchema.virtual('authorName').get(function() {
   return `${this.author.firstName} ${this.author.lastName}`.trim();
 });
 
