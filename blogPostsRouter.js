@@ -3,8 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const { BlogPosts } = require("./models");
-const { DATABASE_URL, PORT } = require('./config');
+const { BlogPost } = require("./models");
 
 const app = express();
 
@@ -93,4 +92,4 @@ app.use('*', function (req, res) {
   res.status(404).json({ message: 'Not Found' });
 });
 
-module.exports = app;
+module.exports = { app }
